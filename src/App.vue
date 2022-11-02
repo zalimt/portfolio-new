@@ -11,9 +11,9 @@
   </Carousel>
   <!-- GALLERY -->
   <div class="gallery-wrapper">
-      <div v-for="(image, ind) in galleryImages" :key="ind" class="popup-image-wrapper">
+      <div  @click="hidePopup" v-for="(image, ind) in galleryImages" :key="ind" class="popup-image-wrapper">
         <div class="popup-image" :class="[currentImage === ind ? activeClass : '']">
-          <img :src="require(`./assets/${image.name}.png`)" :alt="ind">
+          <img @click="hidePopup" :src="require(`./assets/${image.name}.png`)" :alt="ind">
           <a class="closePopup" @click="hidePopup"><i class="fa-solid fa-xmark"></i></a>
         </div>
     </div>
