@@ -23,6 +23,8 @@
       </Image>
     </Gallery>
   </div>
+  <!-- FORM -->
+  <Form class="form"></Form>
 </div>
 </template>
 
@@ -34,6 +36,7 @@ import Gallery from "./components/Gallery.vue"
 import Image from "./components/Image.vue"
 import Masonry from "masonry-layout"
 import { ref } from "vue"
+import Form from "./components/Form"
 
 export default {
   name: 'App',
@@ -43,6 +46,7 @@ export default {
     Slide,
     Gallery,
     Image,
+    Form,
     
   },
   setup() {
@@ -350,6 +354,10 @@ export default {
       transition: .4s all;
       z-index: 300;
     }
+  }
+
+  .form {
+    padding: 50px 0;
   }
 }
 
