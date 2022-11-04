@@ -1,6 +1,7 @@
 <template>
 <div class="home">
   <HeaderMain />
+  <About />
   <Carousel class="carousel"  v-slot="{ currentSlide }" >
     <Slide v-for="(slide, index) in carouselSlides" :key="index">
       <div v-show="currentSlide === index + 1" class="slide-info">
@@ -24,7 +25,7 @@
     </Gallery>
   </div>
   <!-- FORM -->
-  <Form class="form"></Form>
+  <Form></Form>
 </div>
 </template>
 
@@ -34,6 +35,7 @@ import Carousel from "./components/Carousel"
 import Slide from "./components/Slide"
 import Gallery from "./components/Gallery.vue"
 import Image from "./components/Image.vue"
+import About from "./components/About.vue"
 import Masonry from "masonry-layout"
 import { ref } from "vue"
 import Form from "./components/Form"
@@ -47,6 +49,7 @@ export default {
     Gallery,
     Image,
     Form,
+    About
     
   },
   setup() {
@@ -201,6 +204,11 @@ export default {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 #app {
@@ -289,7 +297,7 @@ export default {
   }
 }
 .gallery-wrapper {
-  background: #333;
+  background: #151515;
   padding: 40px;
   margin-top: 70px;
 

@@ -22,18 +22,23 @@ export default {
         },
         {
             id: 2,
-            title: "Works",
-            link: "#"
+            title: "Web",
+            link: "#carousel"
         },
         {
             id: 3,
-            title: "Services",
-            link: "#"
+            title: "Digital",
+            link: "#gallery"
         },
         {
             id: 4,
-            title: "Contact",
+            title: "Service",
             link: "#"
+        },
+        {
+            id: 5,
+            title: "Contact",
+            link: "#contact"
         }
       ]
     };

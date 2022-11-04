@@ -1,5 +1,5 @@
 <template>
-  <div class="carousel">
+  <div id="carousel" class="carousel">
     <slot :currentSlide="currentSlide"/>
     <!-- Navigation -->
     <div class="navigate">
