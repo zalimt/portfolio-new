@@ -305,7 +305,7 @@ html {
       margin: 40px auto;
 
       .image {
-        width: 30%;
+        width: 32%;
         cursor: pointer;
 
 

@@ -110,6 +110,7 @@ export default {
 
         .skills {
             display: flex;
+            flex-wrap: wrap;
             gap: 20px;
             margin-top: 10px;
         

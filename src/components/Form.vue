@@ -7,7 +7,7 @@
             <textarea name="message" required id="message" rows="5" placeholder="Message" v-model="message"></textarea>
             <button type="submit">SEND</button>
         </form>
-        <div v-show="isActive" class="message-success-modal">
+        <div v-if="isActive" class="message-success-modal">
             <div class="message-success">
                 <div @click="isActive=false" class="close-modal">✕</div>
                 <p>Your Message Successfully Sent</p>
@@ -35,17 +35,6 @@ export default {
         }
     },
     methods: {
-        // handleSubmit() {
-        //     let userMessage = {
-        //         name: this.name,
-        //         email: this.email,
-        //         message: this.message,
-        //         date: new Date()
-        //     }
-
-        //     console.log(userMessage)
-        //     projectFirestore.collection('Incoming Messages').add(userMessage);
-        // },
         sendEmail() {
             emailjs.sendForm('zalim_gmail', 'contact_form', this.$refs.form, 'oOpGZlSuR-6lhWtcy')
                 .then((result) => {
