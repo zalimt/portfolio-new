@@ -103,6 +103,7 @@ export default {
 
                 &:focus-visible {
                     outline: 1px solid $yellow;
+                    border: none;
                 }
             }
     

@@ -1,12 +1,13 @@
 <template>
 <div class="home">
   <HeaderMain />
+  <HeroMsg />
   <About />
   <Carousel class="carousel"  v-slot="{ currentSlide }" >
     <Slide v-for="(slide, index) in carouselSlides" :key="index">
       <div v-show="currentSlide === index + 1" class="slide-info">
           <img :src="require(`./assets/${slide.name}.png`)" :alt="slide.webSiteName">
-          <a class="site-url" :href="slide.siteUrl" target="_blank">VIEW LIVE</a>
+          <Button btnStyle="btn-light" btnTitle="VIEW MORE" :href="slide.siteUrl" target="_blank"></Button>
       </div>
     </Slide>
   </Carousel>
@@ -31,7 +32,9 @@
 
 <script>
 import HeaderMain from "./components/Header"
+import HeroMsg from "./components/HeroMsg"
 import Carousel from "./components/Carousel"
+import Button from "./components/Button"
 import Slide from "./components/Slide"
 import Gallery from "./components/Gallery.vue"
 import Image from "./components/Image.vue"
@@ -44,7 +47,9 @@ export default {
   name: 'App',
   components: {
     HeaderMain,
+    HeroMsg,
     Carousel,
+    Button,
     Slide,
     Gallery,
     Image,
@@ -59,7 +64,8 @@ export default {
       {
         name: "ws-1",
         webSiteName: "mysmartswimwear",
-        siteUrl: "//mysmartswimwear.com/"
+        siteUrl: "//mysmartswimwear.com/",
+        poopUrl: "//mysmartswimwear.com/"
       },
       {
         name: "ws-2",
@@ -260,38 +266,6 @@ html {
         width: 100%;
         height: 100%;
         object-fit: cover;
-      }
-
-      .site-url {
-        // color: #FFD600;
-        position: relative;
-        color: #333;
-        text-decoration: none;
-        padding: 10px 15px;
-        font-weight: 500;
-        border: 1px solid #333;
-        z-index: 0;
-
-        &::before {
-          content: "";
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          background: #fff;
-          z-index: -1;
-          transition: .4s all;
-        }
-
-        &:hover::before {
-          background-color: #333;
-        }
-
-        &:hover {
-          transition: .4s all;
-          color: #FFD600;
-        }
       }
     }
   }

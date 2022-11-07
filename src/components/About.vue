@@ -1,7 +1,7 @@
 <template>
 <div class="container">
     <div id="about" class="about">
-        <h1>Hi, my name is Zalim!</h1>
+        <h1>Hi, I am Zalim!</h1>
         <h2>It is really nice to meet you on my personal page.</h2>
         <p>Let me tell you a few words about myself:<br>I am a multidisciplinary Web Developer located in Limassol (Cyprus).</p>
         <p>I specialise in responsive Websites and Landing pages, WordPress, Functional User Interfaces and Corporate Identity.</p>
@@ -91,21 +91,22 @@ export default {
         text-align: left;
         padding: 50px 0;
         color: #151515;
-        width: 80%;
-        margin: 0 auto;
+        width: 60%;
+        // margin: 0 auto;
 
         h1 {
-            font-size: 45px;
+            font-size: 70px;
             line-height: 120%;
         }
 
         h2 {
-            font-size: 25px;
+            font-size: 30px;
             margin-bottom: 20px;
         }
 
         p {
             margin-top: 10px;
+            font-size: 20px;
         }
 
         .skills {

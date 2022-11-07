@@ -1,0 +1,58 @@
+<template>
+    <div class="container">
+        <div class="hero-wrapper">
+            <!-- <h2>Zalim Tsorionov</h2> -->
+            <h2>WEB DEVELOPER</h2>
+            <!-- <h1>Web Developer</h1> -->
+            <h1>Zalim Tsorionov<span style="color: #FFD600;">:</span></h1>
+            <p>Dedicated multidisciplinary designer who pays special attention to the details.<br>My goal is to create both: visually appealing and practical design.</p>
+            <Button btnStyle="btn-dark" style="margin-right: 15px" btnTitle="VIEW WORKS"/>
+            <Button btnStyle="btn-light" btnTitle="CONTACT ME"/>
+        </div>
+    </div>
+</template>
+
+<script>
+import Button from "./Button.vue"
+
+export default {
+    components: {
+        Button
+    }
+
+}
+</script>
+
+<style lang="scss">
+    $yellow: #FFD600;
+    
+    .hero-wrapper {
+        padding-top: 30%;
+        text-align: left;
+        margin: 0 auto;
+        color: #151515;
+        height: 100vh;
+
+        h1 {
+            font-size: 120px;
+            line-height: 100%;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 30px;
+            color: #151515;
+            border: 1px solid #151515;
+            padding: 4px 10px;
+            display: flex;
+            width: max-content;
+            margin-bottom: 20px;
+            background: $yellow;
+        }
+        p {
+            font-size: 25px;
+            margin-bottom: 40px;
+            line-height: 160%;
+        }
+    }
+
+</style>
