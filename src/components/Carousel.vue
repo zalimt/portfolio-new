@@ -1,4 +1,5 @@
 <template>
+<div class="container-full">
   <div id="carousel" class="carousel">
     <slot :currentSlide="currentSlide"/>
     <!-- Navigation -->
@@ -11,6 +12,7 @@
         </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>
@@ -77,7 +79,7 @@ export default {
           justify-content: center;
           width: 40px;
           height: 40px;
-          background-color: #333;
+          background-color: #151515;
           color: #FFD600;
       }
   }

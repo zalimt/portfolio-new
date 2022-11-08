@@ -7,7 +7,7 @@
     <Slide v-for="(slide, index) in carouselSlides" :key="index">
       <div v-show="currentSlide === index + 1" class="slide-info">
           <img :src="require(`./assets/${slide.name}.png`)" :alt="slide.webSiteName">
-          <Button btnStyle="btn-light" btnTitle="VIEW MORE" :href="slide.siteUrl" target="_blank"></Button>
+          <Button btnStyle="btn-light" btnTitle="VIEW LIVE" :href="slide.siteUrl" target="_blank"></Button>
       </div>
     </Slide>
   </Carousel>
@@ -27,6 +27,7 @@
   </div>
   <!-- FORM -->
   <Form></Form>
+  <Footer />
 </div>
 </template>
 
@@ -42,6 +43,7 @@ import About from "./components/About.vue"
 import Masonry from "masonry-layout"
 import { ref } from "vue"
 import Form from "./components/Form"
+import Footer from "./components/Footer"
 
 export default {
   name: 'App',
@@ -54,7 +56,8 @@ export default {
     Gallery,
     Image,
     Form,
-    About
+    About,
+    Footer
     
   },
   setup() {
@@ -224,6 +227,14 @@ html {
   text-align: center;
   color: #2c3e50;
   padding-top: 40px;
+}
+
+.container-full {
+  width: 100vw !important;
+  height: 100vh !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {

@@ -5,7 +5,7 @@
             <input name="name" required type="text" placeholder="Name" v-model="name">
             <input name="email" required type="email" placeholder="Email" v-model="email">
             <textarea name="message" required id="message" rows="5" placeholder="Message" v-model="message"></textarea>
-            <button type="submit">SEND</button>
+            <button class="contact-btn btn-dark" type="submit">SAY HELLO</button>
         </form>
         <div v-if="isActive" class="message-success-modal">
             <div class="message-success">
@@ -66,7 +66,7 @@ export default {
     $yellow: #FFD600;
 
     .form-wrapper {
-        background: #151515;
+        background: #fff;
         padding-bottom: 50px;
 
         form {
@@ -81,7 +81,7 @@ export default {
                 height: 40px;
                 border: none;
                 border-bottom: 1px solid #ccc;
-                background: none;
+                background: #151515;
                 font-size: 18px;
                 padding-left: 7px;
                 color: $yellow;
@@ -94,7 +94,7 @@ export default {
 
             textarea {
                 height: 150px;
-                background: none;
+                background: #151515;
                 font-size: 18px;
                 border: 1px solid #ccc;
                 margin-top: 10px;
@@ -107,16 +107,11 @@ export default {
                 }
             }
     
-            button {
-                height: 50px;
-                color: #151515;
-                background: $yellow;
-                font-size: 18px;
-                font-weight: bold;
-                cursor: pointer;
-                border: none;
-              }
+            .contact-btn {
+                max-width: max-content;
+                border: 1px solid #fff;
             }
+        }
 
             .message-success-modal {
                 background: rgba(0,0,0,0.6);
@@ -146,7 +141,7 @@ export default {
                     transform: translate(-50%, -50%);
                     padding: 40px;
                 }
-            }
+        }
 
     }
     
