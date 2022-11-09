@@ -82,4 +82,11 @@ export default {
         }
       }
 
+      @media (max-width: 600px) {
+        .btn-dark,
+        .btn-light {
+          font-size: 16px;
+        }
+      }
+
 </style>

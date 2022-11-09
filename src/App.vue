@@ -226,7 +226,6 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  padding-top: 40px;
 }
 
 .container-full {
@@ -235,12 +234,20 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 800px) {
+    height: auto !important;
+  }
 }
 
 .container {
   max-width: 1366px;
   margin: auto;
   padding: 0 40px;
+
+  @media (max-width: 800px) {
+    padding: 0 30px !important;
+  }
 }
 
 .d-f {
@@ -289,9 +296,17 @@ html {
   .gallery {
       margin: 40px auto;
 
+      @media (max-width: 800px) {
+          margin: 0 auto;
+      }
+
       .image {
         width: 32%;
         cursor: pointer;
+
+        @media (max-width: 700px) {
+          width: 48%;
+        }
 
 
         img {
@@ -351,6 +366,10 @@ html {
 
   .form {
     padding: 50px 0;
+  }
+
+  @media (max-width: 800px) {
+    margin-top: 0;
   }
 }
 

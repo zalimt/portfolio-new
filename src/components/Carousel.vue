@@ -54,7 +54,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 .navigate {
   position: absolute;
@@ -84,12 +84,24 @@ export default {
       }
   }
   
-  @media (max-width: 1000px) {
+  @media (max-width: 600px) {
     .toggle-page {
       &.left {
-        margin-right: 300px;
+        margin-right: 280px;
       }
     }
+  }
+}
+
+// RESPONSIVE
+@media (max-width: 800px) {
+  .container-full {
+    min-height: 800px;
+  }
+}
+@media (max-width: 600px) {
+  .container-full {
+    min-height: 500px;
   }
 }
 
