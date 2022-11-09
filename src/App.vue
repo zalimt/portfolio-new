@@ -208,6 +208,7 @@ export default {
 
 <style lang="scss">
 
+$yellow: #FFD600;
 
 * {
     margin: 0;
@@ -296,6 +297,11 @@ html {
 
         img {
           width: 100%;
+        }
+
+        &:hover {
+          transform: scale(1.05);
+          transition: .8s all;
         }
       }
   }

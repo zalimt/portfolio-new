@@ -1,6 +1,6 @@
 <template>
-<div class="container-full">
-  <div id="carousel" class="carousel">
+<div id="web" class="container-full">
+  <div class="carousel">
     <slot :currentSlide="currentSlide"/>
     <!-- Navigation -->
     <div class="navigate">

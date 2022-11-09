@@ -1,15 +1,12 @@
 <template>
-    <div class="container-full">
+    <div id="about" class="container-full">
         <div class="container">
-            <div id="about" class="about">
+            <div class="about">
                 <div class="left">
                     <h1>Hi, I am Zalim!</h1>
                     <h2>It is really nice to meet you on my personal page.</h2>
                     <Transition>
-                        <p v-show="showInfo">Let me tell you a few words about myself:<br>I am a multidisciplinary Web Developer located in Limassol (Cyprus).</p>
-                    </Transition>
-                    <Transition>
-                        <p v-show="showInfo">I specialise in responsive Websites and Landing pages, WordPress, Functional User Interfaces and Corporate Identity.</p>
+                        <p v-show="showInfo">Let me tell you a few words about myself:<br>I am a multidisciplinary Web Developer located in Limassol (Cyprus). I specialise in responsive Websites and Landing pages, WordPress, Functional User Interfaces and Corporate Identity.</p>
                     </Transition>
                     <p><strong>My skills include, but not limited to:</strong></p>
                         <div class="skills">
@@ -23,7 +20,7 @@
                             </span>
                         </div>
                     <Transition>
-                        <p v-show="showInfo">I believe that devil is in the details so I pay special attention to them. My goal is to create both: visually appealing and practical projects. Feel free to check out the services I offer or contact me if you have any questions.</p>
+                        <p v-show="showInfo">As I am sure, that devil is in the details, I pay special attention to it. Feel free to check out my works or contact me if you have any questions.</p>
                     </Transition>
                     <div class="show-info">
                         <img @click="showInfo=!showInfo" src="../assets/expand.svg" alt="">
@@ -141,6 +138,7 @@ export default {
             p {
                 margin-top: 10px;
                 font-size: 20px;
+                line-height: 150%;
             }
     
             .skills {

@@ -18,23 +18,23 @@ export default {
         {
             id: 1,
             title: "About",
-            link: "#"
+            link: "#about"
         },
         {
             id: 2,
             title: "Web",
-            link: "#carousel"
+            link: "#web"
         },
         {
             id: 3,
             title: "Digital",
-            link: "#gallery"
+            link: "#digital"
         },
-        {
-            id: 4,
-            title: "Service",
-            link: "#"
-        },
+        // {
+        //     id: 4,
+        //     title: "Service",
+        //     link: "#"
+        // },
         {
             id: 5,
             title: "Contact",
