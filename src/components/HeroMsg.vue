@@ -23,7 +23,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     $yellow: #FFD600;
     
     .hero-wrapper {
@@ -52,6 +52,40 @@ export default {
             font-size: 25px;
             margin-bottom: 40px;
             line-height: 160%;
+        }
+    }
+
+    // RESPONSIVE
+    @media (max-width: 800px) {
+        .hero-wrapper {
+            padding-top: 50%;
+
+            h1 {
+                font-size: 70px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 140%;
+            }
+        }
+    }
+    @media (max-width: 600px) {
+        .hero-wrapper {
+            padding-top: 50%;
+
+            h1 {
+                font-size: 55px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 140%;
+            }
         }
     }
 

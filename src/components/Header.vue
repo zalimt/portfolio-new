@@ -2,7 +2,7 @@
     <header>
         <div class="container d-fsb menu-wrap">
             <div class="left">
-                <a href="">
+                <a href="/">
                     <img :src="logo" alt="">
                 </a>
             </div>
@@ -33,10 +33,19 @@ export default {
 
     
   //---------------RESPONSIVE
-
+    .menu-wrap {
+        padding-top: 40px;
+    }
     @media (max-width: 600px) {
         .menu-wrap {
             flex-direction: column;
+            padding-top: 20px !important;
+
+            .left {
+                img {
+                    width: 45px;
+                }
+            }
         }
     }
 </style>
