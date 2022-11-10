@@ -21,31 +21,9 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-  .nav-item {
-        list-style-type: none;
+<style lang="scss">
 
-        &:not(:last-child) {
-          margin-right: 20px;
-        }
-
-      a {
-        text-decoration: none;
-        color: #333;
-        font-size: 18px;
-
-        &:hover {
-          color: #ffa500;
-        }
-      }
-  }
-
-  //---------------RESPONSIVE
-  
-  @media (max-width: 600px) {
-    .nav-item {
-      font-size: 1px;
-    }
-  }
+@import "../styles/common";
+@import "../styles/nav";
   
 </style>

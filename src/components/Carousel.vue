@@ -54,56 +54,9 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
-.navigate {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 1px;
-  height: auto;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  .toggle-page {
-    &.left {
-      margin-right: 1000px;
-    }
-
-      i {
-          cursor: pointer;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 40px;
-          height: 40px;
-          background-color: #151515;
-          color: #FFD600;
-      }
-  }
-  
-  @media (max-width: 600px) {
-    .toggle-page {
-      &.left {
-        margin-right: 280px;
-      }
-    }
-  }
-}
-
-// RESPONSIVE
-@media (max-width: 800px) {
-  .container-full {
-    min-height: 800px;
-  }
-}
-@media (max-width: 600px) {
-  .container-full {
-    min-height: 500px;
-  }
-}
-
+@import "../styles/common";
+@import "../styles/carousel";
 
 </style>

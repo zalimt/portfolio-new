@@ -63,86 +63,8 @@ export default {
 </script>
 
 <style lang="scss">
-    $yellow: #FFD600;
-
-    .form-wrapper {
-        background: #fff;
-        padding-bottom: 50px;
-
-        form {
-            display: flex;
-            flex-direction: column;
-            max-width: 500px;
-            margin: 0 auto;
-            gap: 10px;
-            padding: 50px 0;
     
-            input {
-                height: 40px;
-                border: none;
-                border-bottom: 1px solid #ccc;
-                background: #151515;
-                font-size: 18px;
-                padding-left: 7px;
-                color: $yellow;
+    @import "../styles/common";
+    @import "../styles/form";
 
-                &:focus-visible {
-                    outline: none;
-                    border-bottom: 1px solid $yellow;
-                }
-            }
-
-            textarea {
-                height: 150px;
-                background: #151515;
-                font-size: 18px;
-                border: 1px solid #ccc;
-                margin-top: 10px;
-                padding: 7px;
-                color: $yellow;
-
-                &:focus-visible {
-                    outline: 1px solid $yellow;
-                    border: none;
-                }
-            }
-    
-            .contact-btn {
-                max-width: max-content;
-                border: 1px solid #fff;
-            }
-        }
-
-            .message-success-modal {
-                background: rgba(0,0,0,0.6);
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100vw;
-                height: 100vh;
-                // display: none;
-
-                .close-modal {
-                    color: #fff;
-                    position: absolute;
-                    top: 7px;
-                    right: 15px;
-                    font-size: 30px;
-                    cursor: pointer;
-                }
-
-                .message-success {
-                    background: #000;
-                    color: $yellow;
-                    max-width: 300px;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    padding: 40px;
-                }
-        }
-
-    }
-    
 </style>

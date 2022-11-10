@@ -31,21 +31,7 @@ export default {
 
 <style lang="scss" scoped>
 
-    
-  //---------------RESPONSIVE
-    .menu-wrap {
-        padding-top: 40px;
-    }
-    @media (max-width: 600px) {
-        .menu-wrap {
-            flex-direction: column;
-            padding-top: 20px !important;
+@import "../styles/common";
+@import "../styles/header";
 
-            .left {
-                img {
-                    width: 45px;
-                }
-            }
-        }
-    }
 </style>

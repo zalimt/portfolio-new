@@ -1,0 +1,54 @@
+$yellow: #ffc800;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.container-full {
+  width: 100vw !important;
+  height: 100vh !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 800px) {
+    height: auto !important;
+  }
+}
+
+.container {
+  max-width: 1366px;
+  margin: auto;
+  padding: 0 40px;
+}
+
+.d-f {
+  display: flex;
+}
+
+.d-fc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-fsb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

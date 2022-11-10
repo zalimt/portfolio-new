@@ -2,9 +2,9 @@
     <footer>
         <div class="footer-wrapper">
             <div class="socials">
-                <div class="scial">
-                    <a href="">
-                        <img src="../assets/skills/html.svg" alt="">
+                <div v-for="(social, index) in socials" :key="index" class="social">
+                    <a :href="social.socialUrl" target="_blank">
+                        <img :src="social.logo" alt="">
                     </a>
                 </div>
             </div>
@@ -20,13 +20,32 @@ export default {
     data() {
         return {
             copyright: "© 2022 tsorionov.com",
+
+            socials: [
+                {
+                    name: "LinkedIn",
+                    logo: require("../assets/social/linkedin.svg"),
+                    socialUrl: "https://www.linkedin.com/in/zalim-tsorionov-06353226"
+                },
+                {
+                    name: "Instagram",
+                    logo: require("../assets/social/instagram.svg"),
+                    socialUrl: "https://www.instagram.com/unstamatable"
+                },
+                {
+                    name: "Facebook",
+                    logo: require("../assets/social/facebook.svg"),
+                    socialUrl: "https://www.facebook.com/zalim.tsorionov"
+                }
+            ]
         }
     }
 }
 </script>
 
 <style lang="scss">
-    .footer-wrapper {
-        display: flex;
-    }
+
+@import "../styles/common";
+@import "../styles/footer";
+
 </style>

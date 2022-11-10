@@ -46,18 +46,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   
-  ul {
-      display: flex;
-  }
 
-//---------------RESPONSIVE
-
-  @media (max-width: 600px) {
-    ul {
-      padding: 0;
-    }
-  }
      
 </style>
