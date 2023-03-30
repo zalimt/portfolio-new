@@ -1,6 +1,7 @@
 .form-wrapper {
     background: #fff;
     padding-bottom: 50px;
+    margin-top: 50px;
 
     form {
         display: flex;
@@ -46,34 +47,34 @@
         }
     }
 
-        .message-success-modal {
-            background: rgba(0,0,0,0.6);
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            // display: none;
+}
+.message-success-modal {
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 200;
+    // display: none;
 
-            .close-modal {
-                color: #fff;
-                position: absolute;
-                top: 7px;
-                right: 15px;
-                font-size: 30px;
-                cursor: pointer;
-            }
-
-            .message-success {
-                background: #000;
-                color: $yellow;
-                max-width: 300px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                padding: 40px;
-            }
+    .close-modal {
+        color: #fff;
+        position: absolute;
+        top: 7px;
+        right: 15px;
+        font-size: 30px;
+        cursor: pointer;
     }
 
+    .message-success {
+        background: #000;
+        color: $yellow;
+        max-width: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 40px;
+    }
 }

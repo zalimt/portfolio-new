@@ -210,5 +210,6 @@ export default {
 
 @import "./styles/common";
 @import "./styles/main";
+@import "./styles/form";
 
 </style>
