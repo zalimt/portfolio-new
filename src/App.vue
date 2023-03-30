@@ -99,12 +99,7 @@ export default {
         name: "ws-7",
         webSiteName: "guiadeltrading",
         siteUrl: "//guiadeltrading.com/"
-      },
-      {
-        name: "ws-8",
-        webSiteName: "forexinspect",
-        siteUrl: "//forexinspect.com/"
-      },
+      }
     ];
 
     // GALLERY IMAGES ARRAY
