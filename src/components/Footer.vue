@@ -16,10 +16,14 @@
 <script>
 export default {
     name: "FooterComp",
+    
 
     data() {
+        
+        const currentYear = new Date().getFullYear();
+        
         return {
-            copyright: "© 2022 tsorionov.com",
+            copyright: `© ${currentYear} tsorionov.com`,
 
             socials: [
                 {

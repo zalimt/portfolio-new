@@ -76,11 +76,6 @@ export default {
         siteUrl: "//cryptalo.com/"
       },
       {
-        name: "ws-3",
-        webSiteName: "digikeymarket",
-        siteUrl: "//digikeymarket.com/"
-      },
-      {
         name: "ws-4",
         webSiteName: "investmedia",
         siteUrl: "//investmedia.tech/"
