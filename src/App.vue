@@ -72,7 +72,6 @@ import Form from "./components/Form";
 import Footer from "./components/Footer";
 
 export default {
-<<<<<<< HEAD
 	name: "App",
 	components: {
 		HeaderMain,
@@ -128,58 +127,6 @@ export default {
 				siteUrl: "//forexinspect.com/",
 			},
 		];
-=======
-  name: 'App',
-  components: {
-    HeaderMain,
-    HeroMsg,
-    Carousel,
-    Button,
-    Slide,
-    Gallery,
-    Image,
-    Form,
-    About,
-    Footer
-    
-  },
-  setup() {
-   
-    // CAROUSEL IMAGES ARRAY
-    const carouselSlides = [
-      {
-        name: "ws-1",
-        webSiteName: "mysmartswimwear",
-        siteUrl: "//mysmartswimwear.com/",
-        poopUrl: "//mysmartswimwear.com/"
-      },
-      {
-        name: "ws-2",
-        webSiteName: "cryptalo",
-        siteUrl: "//cryptalo.com/"
-      },
-      {
-        name: "ws-4",
-        webSiteName: "investmedia",
-        siteUrl: "//investmedia.tech/"
-      },
-      {
-        name: "ws-5",
-        webSiteName: "fxbrokerrating",
-        siteUrl: "//fxbrokerrating.com/"
-      },
-      {
-        name: "ws-6",
-        webSiteName: "trendingbrokers",
-        siteUrl: "//trendingbrokers.com/"
-      },
-      {
-        name: "ws-7",
-        webSiteName: "guiadeltrading",
-        siteUrl: "//guiadeltrading.com/"
-      }
-    ];
->>>>>>> 43182bdbd5a1cae734904bcd68c716e7c55bd70c
 
 		// GALLERY IMAGES ARRAY
 		const galleryImages = [
@@ -289,9 +236,6 @@ export default {
 <style lang="scss">
 @import "./styles/common";
 @import "./styles/main";
-<<<<<<< HEAD
-=======
 @import "./styles/form";
 
->>>>>>> 43182bdbd5a1cae734904bcd68c716e7c55bd70c
 </style>
