@@ -6,7 +6,7 @@
 export default {
     name: "ButtonComp",
 
-    props: ['btnTitle', 'btnStyle']
+    props: ['btnTitle', 'btnStyle'],
 }
 </script>
 
