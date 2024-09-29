@@ -8,7 +8,7 @@
                     </a>
                 </div>
             </div>
-            <p>{{ copyright }}</p>
+            <p><i class="fa-regular fa-copyright"></i>{{ copyright }}</p>
         </div>
     </footer>
 </template>
@@ -19,7 +19,7 @@ export default {
 
     data() {
         return {
-            copyright: "© 2022 tsorionov.com",
+            copyright: "2024 tsorionov.com",
 
             socials: [
                 {

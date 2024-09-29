@@ -6,7 +6,7 @@
                     <h1>Hi, I am Zalim!</h1>
                     <h2>It is really nice to meet you on my personal page.</h2>
                     <Transition>
-                        <p v-show="showInfo">Let me tell you a few words about myself:<br>I am a multidisciplinary Web Developer located in Limassol (Cyprus). I specialise in responsive Websites and Landing pages, WordPress, Functional User Interfaces and Corporate Identity.</p>
+                        <p v-show="showInfo">I am a multidisciplinary UI/UX / Web Developer located in Limassol (Cyprus), with a strong focus on UI/UX and Digital Design. I specialize in creating responsive Websites and Landing Pages, WordPress solutions, Functional User Interfaces, and Corporate Identity.</p>
                     </Transition>
                     <p><strong>My skills include, but not limited to:</strong></p>
                         <div class="skills">
@@ -43,54 +43,54 @@ export default {
             skills: [
                 {
                     id: 1,
-                    title: "HTML",
-                    icon: require("../assets/skills/html.svg"),
+                    title: "Figma",
+                    icon: require("../assets/skills/figma.svg"),
                 },
                 {
                     id: 2,
-                    title: "CSS",
-                    icon: require("../assets/skills/ss3.svg"),
-                },
-                {
-                    id: 3,
-                    title: "SASS/SCSS",
-                    icon: require("../assets/skills/sass.svg"),
-                },
-                {
-                    id: 4,
-                    title: "JavaScript",
-                    icon: require("../assets/skills/javascript.svg"),
-                },
-                {
-                    id: 5,
-                    title: "Vue.js",
-                    icon: require("../assets/skills/vue.svg"),
-                },
-                {
-                    id: 6,
-                    title: "Git",
-                    icon: require("../assets/skills/git.svg"),
-                },
-                {
-                    id: 7,
-                    title: "WordPress",
-                    icon: require("../assets/skills/wordpress.svg"),
-                },
-                {
-                    id: 8,
                     title: "PhotoShop",
                     icon: require("../assets/skills/photoshop.svg"),
                 },
                 {
-                    id: 9,
+                    id: 3,
                     title: "Illustrator",
                     icon: require("../assets/skills/illustrator.svg"),
                 },
                 {
-                    id: 10,
-                    title: "Figma",
-                    icon: require("../assets/skills/figma.svg"),
+                    id: 4,
+                    title: "HTML",
+                    icon: require("../assets/skills/html.svg"),
                 },
+                {
+                    id: 5,
+                    title: "CSS",
+                    icon: require("../assets/skills/ss3.svg"),
+                },
+                {
+                    id: 6,
+                    title: "SASS/SCSS",
+                    icon: require("../assets/skills/sass.svg"),
+                },
+                {
+                    id: 7,
+                    title: "JavaScript",
+                    icon: require("../assets/skills/javascript.svg"),
+                },
+                {
+                    id: 8,
+                    title: "Vue.js",
+                    icon: require("../assets/skills/vue.svg"),
+                },
+                {
+                    id: 9,
+                    title: "Git",
+                    icon: require("../assets/skills/git.svg"),
+                },
+                {
+                    id: 10,
+                    title: "WordPress",
+                    icon: require("../assets/skills/wordpress.svg"),
+                }
             ],
             showInfo: false,
         }

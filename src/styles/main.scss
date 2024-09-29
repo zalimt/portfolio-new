@@ -3,115 +3,116 @@
 }
 
 .carousel {
-    position: relative;
-    height: auto;
-    background: #fff;
-  
-    .slide {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  
-      .slide-info {
-        width: 100%;
-        max-width: 1000px;
-        height: auto;
-  
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          margin-bottom: 30px;
-        }
-      }
-    }
-  }
-  .gallery-wrapper {
-    background: #151515;
-    padding: 40px;
-    margin-top: 70px;
-  
-    .gallery {
-        margin: 40px auto;
-  
-        @media (max-width: 800px) {
-            margin: 0 auto;
-        }
-  
-        .image {
-          width: 32%;
-          cursor: pointer;
-  
-          @media (max-width: 700px) {
-            width: 48%;
-          }
-  
-  
-          img {
-            width: 100%;
-          }
-  
-          &:hover {
-            transform: scale(1.05);
-            transition: .8s all;
-          }
-        }
-    }
-  
-    .popup-image {
-      width: 100vw;
-      height: 100vh;
-      background: rgba(0,0,0,0.9);
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 100;
-      opacity: 0;
-      z-index: -1;
-      transition: .4s all;
-      
+  position: relative;
+  height: auto;
+  background: #fff;
+
+  .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .slide-info {
+      width: 100%;
+      max-width: 1000px;
+      height: auto;
+
       img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 100;
-        width: 80%;
-        max-width: 900px;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
+        margin-bottom: 30px;
       }
-  
-      .closePopup {
-        position: absolute;
-        top: 3%;
-        right: 3%;
-        cursor: pointer;
-        z-index: 300;
-  
-        i {
-          font-size: 30px;
-          color: #333;
-          background: #FFD600;
-          width: 40px;
-          height: 40px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-      }
-  
-      &.visible {
-        opacity: 1;
-        transition: .4s all;
-        z-index: 300;
-      }
-    }
-  
-    .form {
-      padding: 50px 0;
-    }
-  
-    @media (max-width: 800px) {
-      margin-top: 0;
     }
   }
+}
+
+.gallery-wrapper {
+  background: #151515;
+  padding: 40px;
+
+  .gallery {
+    margin: 40px auto;
+
+    @media (max-width: 800px) {
+      margin: 0 auto;
+    }
+
+    .image {
+      width: 32%;
+      cursor: pointer;
+      transition: .8s all;
+
+      @media (max-width: 700px) {
+        width: 48%;
+      }
+
+
+      img {
+        width: 100%;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+        transition: .8s all;
+      }
+    }
+  }
+
+  .popup-image {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    opacity: 0;
+    z-index: -1;
+    transition: .4s all;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 100;
+      width: 80%;
+      max-width: 900px;
+      object-fit: cover;
+    }
+
+    .closePopup {
+      position: absolute;
+      top: 3%;
+      right: 3%;
+      cursor: pointer;
+      z-index: 300;
+
+      i {
+        font-size: 30px;
+        color: #333;
+        background: #FFD600;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &.visible {
+      opacity: 1;
+      transition: .4s all;
+      z-index: 300;
+    }
+  }
+
+  .form {
+    padding: 50px 0;
+  }
+
+  @media (max-width: 800px) {
+    margin-top: 0;
+  }
+}
